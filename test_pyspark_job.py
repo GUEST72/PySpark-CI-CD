@@ -3,6 +3,10 @@ from pyspark.sql import SparkSession
 
 from pyspark_job import clean_data
 
+import os
+import sys
+os.environ['PYSPARK_PYTHON'] = sys.executable
+os.environ['PYSPARK_DRIVER_PYTHON'] = sys.executable
 
 @pytest.fixture(scope="session")
 def spark():
