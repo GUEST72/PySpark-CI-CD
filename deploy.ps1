@@ -1,4 +1,3 @@
-```powershell
 $ErrorActionPreference = "Stop"
 
 $Python = Join-Path $PSScriptRoot ".venv\Scripts\python.exe"
@@ -28,4 +27,3 @@ if ($LASTEXITCODE -ne 0) {
 }
 
 Write-Host "Deployment completed successfully."
-```
