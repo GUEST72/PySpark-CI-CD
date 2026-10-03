@@ -1,5 +1,9 @@
 $ErrorActionPreference = "Stop"
 
+# Force PySpark to use the Windows Python executable
+$env:PYSPARK_PYTHON = "python"
+$env:PYSPARK_DRIVER_PYTHON = "python"
+
 Write-Host "Starting deployment..."
 
 Write-Host "Current commit:"
